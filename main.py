@@ -24,7 +24,13 @@ def run_tests():
 
 def main():
   """This function contains all code for the chatbot."""
-  print("Hello!")
+  print(" Hey there!")
+  name = input(" What might your name be fella? ")
+  print(f"Well hey there {name}!")
+  print("I am Chatbot! I was created to assist and talk to certain people that need somone to talk to. Mostly people who needs friends.")
+  print("I am Chatbot! I was created to comfort the people in need, which seems like today, I will be comforting you!")
+
+
 
 
 if __name__ == "__main__":
