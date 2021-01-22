@@ -46,9 +46,9 @@ def main():
     if age == 15:
       print("Woah! That is the age that is allowed to get permit license! Good luck on getting it if you don't already have it!")
     elif age == 16:
-      print("Wowza! If I can recall, this is the age that is allowed to get the drivers lisences! If you already have it, then kudos to you! I wish I could dirve:(")
+      print("Wowza! If I can recall, this is the age that is allowed to get the drivers lisences! If you already have it, then kudos to you! I wish I could drive:(")
     elif age >= 21:
-      print(f"Holy Crud! You are a old fella aren't you {name}! Lot's of power you have there to be at that age. ust remeber to be responsible!")
+      print(f"Holy Crud! You are a old fella aren't you {name}! Lot's of power you have there to be at that age. Just remeber to be responsible!")
     elif age <=20:
       print("Thats a good age to be at!")
   else:
@@ -84,6 +84,43 @@ def main():
   """
   This segment of the code is for when Chatbot asks the user how their day was. With 3 options (Good, Bad, and Terrific) Chatbot will sit and listen to whatever the user types and gives a response to the input that the user gave
   """
+  game = input("Do you think you know what it is? Yes or No? ")
+  if game == "yes":
+    time.sleep(0.5)
+    answer = input("Guess it then! ")
+    if answer == "game":
+      time.sleep(0.5)
+      print("Woah! Good job! You got it correct!")
+    else:
+      time.sleep(0.5)
+      print("Nope!")
+      print("It's a game silly, a game will always bring anyones mood up!")
+    
+  else:
+    print("Well it's a game silly! Even being a robot, I know that a fun game will always bring someones mood up!")
+  
+  game_title = input("Today's game that we will be playing is \"Can You Guess My Number?!\" So, do you think you are up for the challenge? Yes or No? ")
+  if game_title == "yes":
+    print("Well let's get into it!!!!")
+  elif game_title == "no":
+    print("Well too late, you are stuck here with me playing this game:)\nLet's get into it!!!!")
+  time.sleep(0.5)
+  print("Okay so all you have to do for this game is to just guess my number from 1 to 25! Easy as a lemon squeezy!")
+  number_guess = random.randint(1,25)
+  guessing = input(f"Alright it's your time to shine {name}! Guess my number! ")
+  if guessing == number_guess:
+    print(f"Wowza! Awsome job {name}! You really are special!")
+  if guessing != number_guess:
+    print(f"Awe you were so close! The number was {number_guess}! You will get it next time though I believe it!")
+  """
+  This is the "gaming" segment where Chatbot and the user plays a game together. It uses the random/radient import as the foundation of the game.
+  """
+
+  print(f"Well it was nice talking to you {name}! I hope I see you again!")
+  time.sleep(1)
+  int(input("However, before you go, can you give me a rating from 1/10 just so I know how well I did at my job? If so that would be greatly appreciated! "))
+  print("Thank you for your feedback! I hope that you have a great rest of your day!")
+      
 
 
     
